@@ -14,3 +14,7 @@ regexp <- "([[:digit:]]{8}) ([[:alpha:]]{1})"
 grepl(pattern = regexp, x = muestra13$nif)
 
 #aparecen todo false pero sigo adelante.
+
+#GENERO PISTA
+genero$genero_imp[genero$n_M>genero$n_V]="M"
+genero$genero_imp[genero$n_V>genero$n_M]="V"
